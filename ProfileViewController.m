@@ -27,6 +27,10 @@
 {
     [super viewDidLoad];
     UIGraphicsBeginImageContext(self.view.frame.size);
+    
+    
+    
+    /*
     [[UIImage imageNamed:@"bg.png"] drawInRect:CGRectMake(0, 0, self.view.frame.size.width, 360)];
     UIImage *imagee = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -87,6 +91,7 @@
     [imagesScroll addSubview:img12];
     
     imagesScroll.contentSize = CGSizeMake(67+img1.bounds.size.width*11+90, 0);
+     */
     
 }
 

@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>709DD7E3-1A49-4463-88FD-E24CE24AA31E</string>
+	<string>7D9064F8-5955-4960-9B07-DC1DE42BCD32</string>
 	<key>IDESourceControlProjectName</key>
 	<string>OneThousand</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C4FA48DB-DD4C-4423-8D73-5DCCDBE7AFA9</key>
-		<string>ssh://github.com/Hack4Diversity-SF/InstaResume.git</string>
+		<key>A579BD06-A26B-471D-9AAD-F58568EB8118</key>
+		<string>https://github.com/mussea/OneThousand.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>OneThousand.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C4FA48DB-DD4C-4423-8D73-5DCCDBE7AFA9</key>
+		<key>A579BD06-A26B-471D-9AAD-F58568EB8118</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/Hack4Diversity-SF/InstaResume.git</string>
+	<string>https://github.com/mussea/OneThousand.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C4FA48DB-DD4C-4423-8D73-5DCCDBE7AFA9</string>
+	<string>A579BD06-A26B-471D-9AAD-F58568EB8118</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C4FA48DB-DD4C-4423-8D73-5DCCDBE7AFA9</string>
+			<string>A579BD06-A26B-471D-9AAD-F58568EB8118</string>
 			<key>IDESourceControlWCCName</key>
-			<string>InstaResume</string>
+			<string>OneThousand</string>
 		</dict>
 	</array>
 </dict>

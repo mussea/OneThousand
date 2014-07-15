@@ -91,9 +91,7 @@
                 [PFUser logInWithUsernameInBackground:user password:pass block:^(PFUser *user, NSError *error) {
                     [activityIndicator stopAnimating];
                     if (user) {
-                        UIAlertView *success = [[UIAlertView alloc] initWithTitle:@"Welcome" message:@"Youre signed in" delegate:nil cancelButtonTitle:@"Cool!" otherButtonTitles:nil];
-                        [success show];
-                    } else {
+                        [self performSegueWithIdentifier:@"loginToMain" sender:self];                    } else {
                         NSLog(@"%@",error);
                         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Failed." message:@"Invalid Username and/or Password." delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
                         [alert show];

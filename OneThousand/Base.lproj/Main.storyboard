@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Hk-Ku-9I8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QfB-2g-nmF">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="1Hk-Ku-9I8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wGA-3p-T3k">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="23x-eC-Ovm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kXi-rx-xVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1031" y="-216"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -74,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="6"/>
+            <point key="canvasLocation" x="-507" y="-268"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Cjt-5z-cj1">
@@ -271,7 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qrd-Sw-Rmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="164" y="700"/>
+            <point key="canvasLocation" x="36" y="1576"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="6ym-oe-ChV">
@@ -409,6 +424,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="FmR-2P-laN"/>
                     <connections>
                         <outlet property="imagesScroll" destination="whB-9j-bm2" id="aU8-o8-xhG"/>
                         <outlet property="img1" destination="33V-5t-elC" id="Qhk-X6-9jK"/>
@@ -428,7 +444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7IH-gZ-y14" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="537" y="700"/>
+            <point key="canvasLocation" x="231" y="707"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="lfc-YH-1HD">
@@ -531,6 +547,7 @@
                         <outlet property="password" destination="3ez-Hg-t88" id="YwX-bn-SS4"/>
                         <outlet property="scrollviewlogin" destination="DRz-ni-1g7" id="Nj2-kk-wuE"/>
                         <outlet property="username" destination="ICH-Ca-1v2" id="Y6i-Tm-WSD"/>
+                        <segue destination="YWW-el-YIZ" kind="modal" identifier="loginToMain" id="OFK-Hv-MMg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3b-Ze-t1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -552,6 +569,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="FdY-cw-rJ7"/>
+        <segue reference="MHC-yj-ynC"/>
     </inferredMetricsTieBreakers>
 </document>
