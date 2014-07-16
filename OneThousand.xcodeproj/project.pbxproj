@@ -26,7 +26,8 @@
 		0A58A72019720203008968F1 /* PicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A58A71E19720203008968F1 /* PicturesViewController.m */; };
 		0A58A72519720340008968F1 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A58A72319720340008968F1 /* PhotoDetailViewController.m */; };
 		0A58A72619720340008968F1 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A58A72419720340008968F1 /* PhotoDetailViewController.xib */; };
-		28758F971975AF2C0072CBFE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28758F961975AF2C0072CBFE /* Parse.framework */; };
+		280C727219764D7B00F218F9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280C727119764D7B00F218F9 /* Parse.framework */; };
+		280C7275197654F500F218F9 /* InterestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 280C7274197654F500F218F9 /* InterestView.m */; };
 		764DB0D71971BFB400AF3387 /* emialbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 764DB0D31971BFB400AF3387 /* emialbutton.png */; };
 		764DB0D81971BFB400AF3387 /* linkedinbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 764DB0D41971BFB400AF3387 /* linkedinbutton.png */; };
 		764DB0D91971BFB400AF3387 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 764DB0D51971BFB400AF3387 /* bg.png */; };
@@ -83,7 +84,9 @@
 		0A58A72219720340008968F1 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
 		0A58A72319720340008968F1 /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
 		0A58A72419720340008968F1 /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailViewController.xib; sourceTree = "<group>"; };
-		28758F961975AF2C0072CBFE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../Downloads/Frameworks/Parse.framework; sourceTree = "<group>"; };
+		280C727119764D7B00F218F9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../../Documents/Parse.framework; sourceTree = "<group>"; };
+		280C7273197654F500F218F9 /* InterestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestView.h; sourceTree = "<group>"; };
+		280C7274197654F500F218F9 /* InterestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestView.m; sourceTree = "<group>"; };
 		764DB0D31971BFB400AF3387 /* emialbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emialbutton.png; sourceTree = "<group>"; };
 		764DB0D41971BFB400AF3387 /* linkedinbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkedinbutton.png; sourceTree = "<group>"; };
 		764DB0D51971BFB400AF3387 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
@@ -96,7 +99,6 @@
 		764DB0E81971F85000AF3387 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		764DB0EA1971F85C00AF3387 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		764DB0EC1971F87700AF3387 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		76F7917E19724FCA00722742 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Desktop/Parse.framework; sourceTree = "<group>"; };
 		76F791801972505400722742 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		76F791811972505400722742 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		76F79183197269F100722742 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
@@ -109,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28758F971975AF2C0072CBFE /* Parse.framework in Frameworks */,
+				280C727219764D7B00F218F9 /* Parse.framework in Frameworks */,
 				764DB0ED1971F87700AF3387 /* SystemConfiguration.framework in Frameworks */,
 				764DB0EB1971F85C00AF3387 /* Accounts.framework in Frameworks */,
 				764DB0E91971F85000AF3387 /* CFNetwork.framework in Frameworks */,
@@ -157,8 +159,7 @@
 		0A58A6A01971B149008968F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				28758F961975AF2C0072CBFE /* Parse.framework */,
-				76F7917E19724FCA00722742 /* Parse.framework */,
+				280C727119764D7B00F218F9 /* Parse.framework */,
 				764DB0EC1971F87700AF3387 /* SystemConfiguration.framework */,
 				764DB0EA1971F85C00AF3387 /* Accounts.framework */,
 				764DB0E81971F85000AF3387 /* CFNetwork.framework */,
@@ -179,6 +180,8 @@
 				0A58A6B01971B14A008968F1 /* AppDelegate.h */,
 				0A58A6B11971B14A008968F1 /* AppDelegate.m */,
 				0A58A6B31971B14A008968F1 /* Main.storyboard */,
+				280C7273197654F500F218F9 /* InterestView.h */,
+				280C7274197654F500F218F9 /* InterestView.m */,
 				764DB0DB1971D06E00AF3387 /* SignUpViewController.h */,
 				0A58A71D19720203008968F1 /* PicturesViewController.h */,
 				0A58A71E19720203008968F1 /* PicturesViewController.m */,
@@ -348,6 +351,7 @@
 				0A58A6B81971B14A008968F1 /* ViewController.m in Sources */,
 				0A58A72519720340008968F1 /* PhotoDetailViewController.m in Sources */,
 				0A58A6B21971B14A008968F1 /* AppDelegate.m in Sources */,
+				280C7275197654F500F218F9 /* InterestView.m in Sources */,
 				76F791821972505400722742 /* MBProgressHUD.m in Sources */,
 				0A58A71C197201E3008968F1 /* ProfileViewController.m in Sources */,
 				0A58A6AE1971B14A008968F1 /* main.m in Sources */,
@@ -486,6 +490,7 @@
 					/Users/xiomara/Documents/Resume,
 					/Users/ahmedfathi/Desktop,
 					/Users/Abdi/Downloads/Frameworks,
+					/Users/Abdi/Documents,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OneThousand/OneThousand-Prefix.pch";
@@ -511,6 +516,7 @@
 					/Users/xiomara/Documents/Resume,
 					/Users/ahmedfathi/Desktop,
 					/Users/Abdi/Downloads/Frameworks,
+					/Users/Abdi/Documents,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OneThousand/OneThousand-Prefix.pch";

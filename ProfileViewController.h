@@ -25,6 +25,7 @@
     IBOutlet UIButton *img12;
 
     IBOutlet UIButton *recentimage;
+    UILabel *myLabel;
     IBOutlet UIScrollView *imagesScroll;
 }
 

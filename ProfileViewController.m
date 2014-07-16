@@ -7,6 +7,8 @@
 //
 
 #import "ProfileViewController.h"
+#import <Parse/Parse.h>
+
 
 @interface ProfileViewController ()
 
@@ -27,6 +29,35 @@
 {
     [super viewDidLoad];
     UIGraphicsBeginImageContext(self.view.frame.size);
+    
+    PFUser *user = [PFUser currentUser];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Skills"];
+    [query whereKey:@"email" equalTo:user.username];
+    [query countObjectsInBackgroundWithBlock:^(int count, NSError *error) {
+        if (!error) {
+            if (count==0) {
+                UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+                [self.view addSubview:button];
+                [button setTitle:@"Press Me" forState:UIControlStateNormal];
+                [button sizeToFit];
+                button.center = CGPointMake(100, 350);
+                
+                NSLog(@"Here is: %i", count);
+            }
+            else{
+                 [self performSegueWithIdentifier:@"interest" sender:self];
+                NSLog(@"Here is: %i", count);
+
+                
+            }
+            //NSLog(@"Sean has played %d games", count);
+        } else {
+            // The request failed
+        }
+    }];
+
+    
     
     
     
