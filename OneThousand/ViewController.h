@@ -16,4 +16,10 @@
 - (IBAction)linkedinSignup:(id)sender;
 - (IBAction)emailSignup:(id)sender;
 - (IBAction)login:(id)sender;
+- (IBAction)loginButtonTouchHandler:(id)sender;
+
+
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityIndicator;
+
 @end
+

@@ -45,7 +45,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="linkedinbutton.png"/>
                                 <connections>
-                                    <action selector="linkedinSignup:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bff-td-hbZ"/>
+                                    <action selector="loginButtonTouchHandler:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pJ9-qa-lxw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hEC-kg-PJ5">
@@ -85,6 +85,7 @@
                     <connections>
                         <outlet property="loginbtn" destination="uAU-jz-G03" id="PpV-Y6-raw"/>
                         <outlet property="mtitle" destination="zo3-du-l5e" id="swa-Os-Viy"/>
+                        <segue destination="YWW-el-YIZ" kind="modal" identifier="toMain" id="9i9-iA-2Px"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -447,7 +448,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7IH-gZ-y14" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231" y="707"/>
+            <point key="canvasLocation" x="255" y="-953"/>
         </scene>
         <!--Interest View-->
         <scene sceneID="dBY-A7-8WQ">
@@ -601,5 +602,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="MHC-yj-ynC"/>
+        <segue reference="9i9-iA-2Px"/>
     </inferredMetricsTieBreakers>
 </document>
